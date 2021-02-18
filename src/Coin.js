@@ -21,7 +21,7 @@ const Coin = ({
         <div className='coin-data'>
           <p className='coin-price'>₦{price.toLocaleString()}</p>
           &nbsp;
-          <p className='coin-volume'>₦{volume.toLocaleString()}</p>
+          <p className='coin-volume'>₦{volume}</p>
 
           {priceChange < 0 ? (
             <p className='coin-percent red'>{priceChange.toFixed(2)}%</p>
@@ -29,7 +29,7 @@ const Coin = ({
             <p className='coin-percent green'>{priceChange.toFixed(2)}%</p>
           )}
 
-          <p className='coin-marketcap'>Mkt Cap: ₦{marketcap}</p>
+          <p className='coin-marketcap'>Mkt Cap: ₦{marketcap.toLocaleString()}</p>
         </div>
       </div>
     </div>
